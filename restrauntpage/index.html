@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighFoods | Premium Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="main-page">
+        <!-- Hero Section -->
+        <section id="hero">
+            <video autoplay muted loop id="bg-video">
+                <!-- Using an aesthetic cooking/restaurant video from Pexels as a placeholder link -->
+                <source src="https://www.pexels.com/download/video/31631562/" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="hero-content">
+                <h1>HighFoods</h1>
+                <p>Experience Culinary Excellence</p>
+            </div>
+        </section>
+
+        <!-- About Section -->  
+        <section id="about">
+            <div class="container">
+                <h2>Our Story</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>HighFoods was established with a vision to bring world-class culinary experiences to your plate. What started as a humble kitchen has now grown into a premier destination for food lovers. Our commitment to fresh ingredients, authentic recipes, and unparalleled hospitality has made us a staple in the community. Join us in celebrating the art of fine dining, where every meal is a masterpiece crafted with passion and dedication.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Restaurant Interior">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section id="reservation">
+            <div class="container">
+                <h2>Dine With Us</h2>
+                <p>Experience the perfect ambiance and exquisite flavors.</p>
+                <button id="btn-reservation" class="primary-btn">Get a Reservation</button>
+            </div>
+        </section>
+
+        <!-- Star Foods Section -->
+        <section id="star-foods">
+            <div class="container">
+                <h2>OUR STAR FOODS</h2>
+                <div class="food-grid">
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Biriyani">
+                        <h3>Authentic Biriyani</h3>
+                    </div>
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1562376552-0d160a2f9fa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Waffle">
+                        <h3>Belgian Waffle</h3>
+                    </div>
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Al-Faham">
+                        <h3>Al-Faham Chicken</h3>
+                    </div>
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Burger">
+                        <h3>Classic Burger</h3>
+                    </div>
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pizza">
+                        <h3>Wood-fired Pizza</h3>
+                    </div>
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pasta">
+                        <h3>Creamy Pasta</h3>
+                    </div>
+                </div>
+                <div class="menu-action">
+                    <button id="btn-show-menu" class="secondary-btn">Show Menu</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / Footer -->
+        <footer id="cta">
+            <div class="container footer-content">
+                <h2>HighFoods</h2>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                </div>
+                <p>&copy; 2026 HighFoods. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Reservation Page -->
+    <div id="reservation-page" class="hidden-page">
+        <div class="page-content">
+            <button class="btn-back" onclick="goHome()">← Back to Home</button>
+            <h2>Reserve Your Table</h2>
+            <p>To make a reservation, please contact us on WhatsApp:</p>
+            <div class="whatsapp-box">
+                <i class="fab fa-whatsapp"></i>
+                <span>+91 98765 43210</span>
+            </div>
+            <a href="https://wa.me/919876543210" class="primary-btn" target="_blank">Message on WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- Menu Page -->
+    <div id="menu-page" class="hidden-page">
+        <div class="container page-content">
+            <button class="btn-back" onclick="goHome()">← Back to Home</button>
+            <h2>Our Menu</h2>
+            <div class="menu-grid" id="menu-items-container">
+                <!-- Menu items injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
